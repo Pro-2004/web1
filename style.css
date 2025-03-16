@@ -1,0 +1,529 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    top: 0px;
+  z-index: -1;
+    
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    background-color:goldenrod;
+  }
+  /* photo css code*/
+  .pro {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 500px;
+    padding-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .shaking-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: shake 0.9s infinite;
+    filter: brightness(1.0) saturate(2) contrast(1.0);
+    border: 5px solid ghostwhite; /* Add blue border */
+    box-shadow: 
+    0 0 10px paleturquoise, 
+    0 0 15px paleturquoise, 
+    0 0 20px paleturquoise, 
+    0 0 25px paleturquoise, /* Red shadow */
+    0 0 30px black, /* Black shadow */
+    0 0 35px black, /* Black shadow */
+    0 0 40px black, /* Black shadow */
+    0 0 45px black;  
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+.g {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  
+}
+
+.photo {
+  flex: 0 0 30%;
+  
+  margin: 10px;
+  overflow: hidden;
+    box-shadow: 
+  0 0 10px gray, 
+  0 0 15px gray, 
+  0 0 20px gray, 
+  0 0 25px gray, /* Red shadow */
+  0 0 30px bisque, /* Black shadow */
+  0 0 35px bisque, /* Black shadow */
+  0 0 40px bisque, /* Black shadow */
+  0 0 45px bisque; 
+  
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.9s;
+  
+}
+
+.photo img:hover {
+  transform: scale(1.9);
+  
+
+}
+.red-button {
+  background-color: red;
+  color: white;
+  height: -20px;
+  size: 30px;
+  
+}
+.red-button:hover{
+  color: bisque;
+  background-color: cyan;
+  cursor: pointer;
+}
+.po{
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+
+}
+
+
+
+
+
+.progress-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: left;
+}
+.progress {
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.bar {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 20px;
+}
+.label {
+  margin-bottom: 5px;
+}
+.w {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.language {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.bar {
+  height: 20px;
+  background-color: #3498db;
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+.o {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.details {
+  flex: 1;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #2ecc71;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+/* fsd*/
+.cc {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+      background-image: url('360_F_246915120_X6XqS7t5EtSvqNndRNhKARcGOOMUBFkZ.jpg');
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  
+}
+
+.photos img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: rgb(40, 24, 24);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.no{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 200px;
+  width: 50px;
+  height: 100px;
+}
+
+
+.robot-container {
+  position: absolute;
+  top: 0;
+  left: -770px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: Add a semi-transparent background */
+  
+}
+
+.robot-image {
+  width: 400px; /* Adjust the size as needed */
+  height: 300px;
+  border-radius:45px; /* Optional: Make the image circular */
+  
+}
+.peter{
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 2px 2px 5px red;
+  
+}
+
+/*CV CODE*/
+.cv {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: rgb(42, 218, 218);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: gray; /* gray */
+    border: 2px solid #333; /* Dark Gray */
+   
+    flex: 0 0 30%;
+  
+    margin: 10px;
+    overflow: hidden;
+    
+   
+}
+
+h2{
+  color: #333;
+}
+
+.bu {
+  padding: 10px 20px;
+  background-color: rgb(234, 204, 158);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bu:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  padding: 0 15px;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e67e22;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #e67e22;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  background-color: #e67e22;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ffffff;
+}
