@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Payzine</title>
+<link rel="stylesheet" href="style.css">
+<link rel="php" href="test.php">
+</head>
+<body>
+    <!--navigation  bar html code-->
+<nav class="navbar">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#home">Home</a></li>
+    <li class="nav-item"><a href="#about">About</a></li>
+    <li class="nav-item"><a href="Gallery.html">Gallery</a></li>
+    <li class="nav-item"><a href="https://payzinepro.github.io/Calculator-/">Simple calculator</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+
+</div>
+</nav>
+<div class="peter">
+    <p1 id="typing"></p1></div>
+<div class="pro">
+   
+    <div class="no"> 
+        <button onclick="speak()">VOICE WELCOME</button>
+    </div>
+     <!--photos showing robot and pros photo-->
+<div class="container">
+    <img src="Certificates/pb.jpg" alt="Shaking Image" class="shaking-image">
+    <div class="robot-container">
+        <img src="depositphotos_25142857-stock-photo-computer-robot-background.jpg" alt="Robotic Image" class="robot-image">
+       
+    </div> 
+  </div>
+  
+  </div>
+
+  <!--Boxes insertion-->
+   <!--photos showing things i am interesting in learning-->
+   
+  <div class="po">
+    <p>Things I'm interested in learning and currently learning</p>
+  </div>
+  
+  <div class="g">
+    <div class="photo">
+        <img src="internet-information-technology-concept-laptop-computer-showing-data-processing-screen-122397310.webp" alt="Photo 1">
+        <h2>Introduction to Networking</h2>
+        <a href="https://www.netacad.com/courses/networking" class="red-button">Click Me</a>
+    </div>
+    <div class="photo">
+        <img src="man-holding-smart-phone-colorful-260nw-533640175.webp" alt="Photo 2">
+        <h2>Infrastructure-automation</h2>
+        <a href="https://www.netacad.com/courses/infrastructure-automation" class="red-button">Click Me</a>
+    </div>
+
+    <div class="photo">
+    
+        <img src="2-1-1.png" alt="Photo 3">
+        <h2>Internet of things</h2>
+        <a href="https://www.netacad.com/courses/iot" class="red-button">Click Me</a>
+    </div>
+     <!--Dashboard showing programming languages I know-->
+    <div class="w">
+      <h1>Programming Languages that I'm familar with to work</h1>
+      <div class="languages">
+          <div class="language">
+              <h2>HTML/CSS</h2>
+              <div class="bar" id="python-bar"></div>
+              <span id="python-score"></span>
+          </div>
+          <div class="language">
+              <h2>Javascript</h2>
+              <div class="bar" id="javascript-bar"></div>
+              <span id="javascript-score"></span>
+          </div>
+          <div class="language">
+              <h2>C/C++</h2>
+              <div class="bar" id="cpp-bar"></div>
+              <span id="cpp-score"></span>
+          </div>
+      </div>
+  </div>
+   <!--About me Dashboard and a contact form-->
+  <div class="o">
+    <h1>About Me</h1>
+    <div class="profile">
+        <img src="Certificates/pb.jpg" alt="Profile Picture">
+        <div class="details">
+            <p><strong>Name:</strong> Pro Payzine</p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Location:</strong>Kigali, Rwanda</p>
+            <p><strong>Profession:</strong>Student</p>
+
+        </div>
+    </div>
+    <p class="description">
+       I'm an international student from Liberia currently in Rwanda for schooling purpose.
+       I'm a level two student currently studying IT-Networking at the University of Lay Adventists of Kigali.
+       I'm a Frontend developer and also I have high interest in IoT, Cloud computing, Mobile app development.
+       I have certificate in Leadership from Beyond Success Institute, certificate from google in Machine learning,
+       certificate from Kaggle, certificate from Allision and Great Learning academy.
+    </p>
+    <button onclick="showContactForm()">Contact Me</button>
+    <div id="contact-form" style="display: none;">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xrgnwwdy" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+ <!--Dashboard showing my certificates-->
+<div class="cc">
+    <h1>Check Out my <span>Certificates</span></h1>
+    <div id="photos" class="photos">
+        <img src="Certificates/p1.jpg" alt="Photo 1">
+        <img src="Certificates/p2.jpg" alt="Photo 2">
+        <img src="Certificates/p3.jpg" alt="Photo 3">
+        <img src="Certificates/p4.jpg" alt="Photo 4">
+        <img src="Certificates/p5.jpg" alt="Photo 5">
+        <img src="Certificates/p6.png" alt="Photo 6"> 
+        <img src="Certificates/p7.png" alt="Photo 7">
+        <img src="Certificates/p8.png" alt="Photo 8">
+    </div>
+    <div id="fullSizePhotoModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullSizePhoto">
+    </div>
+</div>
+<div class="cv">
+    <h2>Pro's CV</h2>
+    <p>Click the button below to view my CV:</p>
+    <button id="download-btn">View CV</button>
+</div>
+<script src="script.js"></script>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>About Me</h4>
+                <ul>
+                    <li><a href="#">Company Information</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Database Management</a></li>
+                    <li><a href="#">Figma Design</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Me!</h4>
+                <ul>
+                    <li><a href="payzinepro1@gmail.com">Email</a>payzinepro1@gmail.com</li>
+                    <li><a href="#">Phone</a> +250792576984</li>
+                    <li><a href="#">Address</a>Kigali, Rwanda</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Me</h4>
+                <div class="social-links">
+                    <a href="#"><i class="images.png"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<a href="mailto:"></a>
